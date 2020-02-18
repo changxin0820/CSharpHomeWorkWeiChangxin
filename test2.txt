@@ -1,3 +1,0 @@
-test2
-secondtest2
-ssh
