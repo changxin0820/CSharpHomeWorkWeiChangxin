@@ -1,0 +1,11 @@
+D:\VS.NET\ShapeFactory\ShapeFactory\bin\Debug\netcoreapp2.1\ShapeFactory.deps.json
+D:\VS.NET\ShapeFactory\ShapeFactory\bin\Debug\netcoreapp2.1\ShapeFactory.runtimeconfig.json
+D:\VS.NET\ShapeFactory\ShapeFactory\bin\Debug\netcoreapp2.1\ShapeFactory.runtimeconfig.dev.json
+D:\VS.NET\ShapeFactory\ShapeFactory\bin\Debug\netcoreapp2.1\ShapeFactory.dll
+D:\VS.NET\ShapeFactory\ShapeFactory\bin\Debug\netcoreapp2.1\ShapeFactory.pdb
+D:\VS.NET\ShapeFactory\ShapeFactory\obj\Debug\netcoreapp2.1\ShapeFactory.csprojAssemblyReference.cache
+D:\VS.NET\ShapeFactory\ShapeFactory\obj\Debug\netcoreapp2.1\ShapeFactory.csproj.CoreCompileInputs.cache
+D:\VS.NET\ShapeFactory\ShapeFactory\obj\Debug\netcoreapp2.1\ShapeFactory.AssemblyInfoInputs.cache
+D:\VS.NET\ShapeFactory\ShapeFactory\obj\Debug\netcoreapp2.1\ShapeFactory.AssemblyInfo.cs
+D:\VS.NET\ShapeFactory\ShapeFactory\obj\Debug\netcoreapp2.1\ShapeFactory.dll
+D:\VS.NET\ShapeFactory\ShapeFactory\obj\Debug\netcoreapp2.1\ShapeFactory.pdb

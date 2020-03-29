@@ -1,0 +1,11 @@
+D:\VS.NET\GetArea\GetArea\bin\Debug\netcoreapp2.1\GetArea.deps.json
+D:\VS.NET\GetArea\GetArea\bin\Debug\netcoreapp2.1\GetArea.runtimeconfig.json
+D:\VS.NET\GetArea\GetArea\bin\Debug\netcoreapp2.1\GetArea.runtimeconfig.dev.json
+D:\VS.NET\GetArea\GetArea\bin\Debug\netcoreapp2.1\GetArea.dll
+D:\VS.NET\GetArea\GetArea\bin\Debug\netcoreapp2.1\GetArea.pdb
+D:\VS.NET\GetArea\GetArea\obj\Debug\netcoreapp2.1\GetArea.csprojAssemblyReference.cache
+D:\VS.NET\GetArea\GetArea\obj\Debug\netcoreapp2.1\GetArea.csproj.CoreCompileInputs.cache
+D:\VS.NET\GetArea\GetArea\obj\Debug\netcoreapp2.1\GetArea.AssemblyInfoInputs.cache
+D:\VS.NET\GetArea\GetArea\obj\Debug\netcoreapp2.1\GetArea.AssemblyInfo.cs
+D:\VS.NET\GetArea\GetArea\obj\Debug\netcoreapp2.1\GetArea.dll
+D:\VS.NET\GetArea\GetArea\obj\Debug\netcoreapp2.1\GetArea.pdb
