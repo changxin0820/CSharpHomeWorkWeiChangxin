@@ -113,12 +113,18 @@ namespace OrderManage
         List<OrderDetails> orderList = new List<OrderDetails>();
         public void addOrder(OrderDetails order)
         {
+            if (orderList.Contains(order))
+                throw new ApplicationException($"Add Order Error: Order with id {order.orderID} already exists!");
             orderList.Add(order);
         }
 
         public void deleteOrder(OrderDetails order)//删除订单
         {
+            if(order != null)
+            {
             orderList.Remove(order);
+            }
+           
         }
 
         public void queryOrderByID(int id)//查找订单
@@ -130,7 +136,7 @@ namespace OrderManage
             }
 
         }
-        public void sortOrder()//修改订单
+        public void sortOrder()//排序订单
         {
             var query2 = orderList.OrderBy(o => o.orderID);
             foreach(var q in query2)
@@ -145,7 +151,13 @@ namespace OrderManage
                 Console.WriteLine(o.ToString());
             }
         }
-        public void Export()
+        public void UpdateOrder(OrderDetails order)//更新订单
+        {
+
+            deleteOrder(order);
+            addOrder(order);
+        }
+        public void Export()//序列化导出
         {
             XmlSerializer xmlSerializer = new XmlSerializer(typeof (List<OrderDetails>));
             using (FileStream fs = new FileStream("Order.xml", FileMode.Create))
@@ -153,7 +165,7 @@ namespace OrderManage
                 xmlSerializer.Serialize(fs, orderList);
             }
         }
-        public void Import(string path)
+        public void Import(string path)//序列化导入
         {
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<OrderDetails>));
             using (FileStream fs=new FileStream(path, FileMode.Open))
