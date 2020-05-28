@@ -1,4 +1,5 @@
 ﻿
+using MySql.Data.MySqlClient;
 using OrderApp;
 using System;
 using System.Collections.Generic;
@@ -17,13 +18,6 @@ namespace OrderForm {
 
     public FormMain() {
       InitializeComponent();
-      //Order order = new Order(1, new Customer("1", "li"), new List<OrderItem>());
-      //order.AddItem(new OrderItem(1, new Goods("1", "apple", 100.0), 10));
-      //order.AddItem(new OrderItem(1, new Goods("2", "egg", 50.0), 61));
-      //orderService.AddOrder(order);
-      //Order order2 = new Order(2, new Customer("2", "zhang"), new List<OrderItem>());
-      //order2.AddItem(new OrderItem(1, new Goods("2", "egg", 200.0), 10));
-      //orderService.AddOrder(order2);
       orderBindingSource.DataSource = OrderService.GetAllOrders();
       cbField.SelectedIndex = 0;
       txtValue.DataBindings.Add("Text", this, "Keyword");
@@ -116,6 +110,30 @@ namespace OrderForm {
 
     }
 
- 
-  }
+        private void txtValue_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            String connetStr = "server=127.0.0.1;port=3306;user=root;password=wcx08202818; database=c#orderwork;";
+            // server=127.0.0.1/localhost 代表本机，端口号port默认是3306可以不写
+            MySqlConnection conn = new MySqlConnection(connetStr);
+            try
+            {
+                conn.Open();//打开通道，建立连接，可能出现异常,使用try catch语句
+
+                //在这里使用代码对数据库进行增删查改
+
+                MessageBox.Show("数据库连接成功！");
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("数据库连接异常！");
+            }
+
+        }
+    }
 }
